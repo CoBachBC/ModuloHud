@@ -9,7 +9,7 @@ Módulo para mostrar notificaciones emergentes en las aplicaciones MVC C# de CoB
 
 ## Uso
 
-Muestra en una notificación emergente que se muestra durante 5 segundos el contenido de `TempData["message"]`. Puedes formatear el texto de tu `TempData["message"]` para utilizar los estilos predefinidos:
+Muestra en una notificación emergente durante 5 segundos el contenido de `TempData["message"]`. Puedes formatear el texto de tu `TempData["message"]` para utilizar los estilos predefinidos:
 - **Éxito**: se muestra en color verde. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Rx.`** seguido inmediatamente del texto que deseas que muestre la notificación.
 - **Notificación**: se muestra en color azul. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Nx.`** seguido inmediatamente del texto que deseas que muestre la notificación.
 - **Advertencia**: se muestra en amarillo. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Wx.`** seguido inmediatamente del texto que deseas que muestre la notificación.
