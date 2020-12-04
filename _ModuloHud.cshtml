@@ -1,0 +1,25 @@
+﻿@{
+    if (TempData["message"] != null)
+    {
+        string hudClass = "";
+        switch (TempData["message"].ToString().Substring(0, 2))
+        {
+            case "Rx":
+                hudClass = "hudExito fadeHud";
+                break;
+            case "Ex":
+                hudClass = "hudError fadeHud";
+                break;
+            case "Nx":
+                hudClass = "hudNotificacion fadeHud";
+                break;
+            case "Wx":
+                hudClass = "hudAdvertencia fadeHud";
+                break;
+            default:
+                hudClass = "hudNeutro fadeHud";
+                break;
+        }
+        <h3 class="@hudClass">@TempData["message"].ToString().Substring(3, TempData["message"].ToString().Length - 3)</h3>
+    }
+}
