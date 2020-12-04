@@ -16,7 +16,7 @@ Muestra en una notificación emergente que se muestra durante 5 segundos el cont
 - **Error**: se muestra en color rojo. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Ex.`** seguido inmediatamente del texto que deseas que muestre la notificación.
 - **No definido**: se muestra en color blanco. Esta opción se muestra por defecto cuando la evaluación de los 3 primeros caracteres de la cadena no coincide con las opciones predeterminadas, mostrará el texto **después de los primeros tres caracteres** que compongan la cadena `TempData["message"]`.
 
-Típicamente el contenido de `TempData["message"]` proviene de la variabel `res` en los archivos de `repository`, por lo que es en éstos donde se tiene que realizar el cambio para que funcione adecuadamente, por ejemplo:
+Típicamente el contenido de `TempData["message"]` proviene de la variable `res` en los archivos de `repository`, por lo que es en éstos donde se tiene que realizar el cambio para que funcione adecuadamente, por ejemplo:
 
 Cambiar `res = "OK";` por `res = "Rx.OK"` producirá un mensaje de tipo `Éxito` con el texto `OK`.
 
@@ -30,3 +30,5 @@ La vista `_ModuloHud.cshtml` atrapa el valor de `TempData["message"]` y lo eval�
 - __Wx__ asigna la clase `hudAdvertencia`.
 
 Si no evalúa a uno de esas opciones asigna la clase defecto `hudNeutro.`
+
+El script `moduloHud.js` busca la clase `fadeHud` y con jQuery la muestra por 5000 milisegundos para después desvanecerla. El tiempo de duración se puede modificar en este mismo archivo. La duración se aplica a todas las notificaciones.
