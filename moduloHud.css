@@ -1,0 +1,35 @@
+.hudExito, .hudError, .hudAdvertencia, .hudNotificacion, .hudNeutro{border-style:solid;
+border-width:1px;
+font-weight:bold;
+padding:1rem;
+border-radius:.5rem;
+margin-bottom:1rem;
+display:inline-block;
+width:300px;
+right:50%;
+margin-right:-150px;
+text-align:center;
+position:absolute;
+z-index:9999;
+box-shadow:rgba(0,0,0,.65) 0 0 30px;
+}
+
+.hudAdvertencia{color:#8a3300;
+border-color:#8a3300;
+background:#fed94c;}
+
+.hudNotificacion{color:#000455;
+border-color:#000455;
+background:#a8d0ee;}
+
+.hudError{color:#820000;
+border-color:#820000;
+background:#f78686;}
+
+.hudExito{color:#00511d;
+border-color:#00511d;
+background:#acfcae;}
+
+.hudNeutro{color:#6b6b6b;
+border-color:#6b6b6b;
+background:#ffffff;}
