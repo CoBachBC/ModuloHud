@@ -1,6 +1,8 @@
 # ModuloHud
 Módulo para mostrar notificaciones emergentes en las aplicaciones MVC C# de CoBachBC
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IPlDpxTlFTo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Implementación
 
 1. Incluye la vista parcial `_ModuloHud.cshtml` como primera hija del contenedor principal de la aplicación (típicamente `<div id="main">`).
