@@ -17,7 +17,7 @@ Muestra en una notificación emergente durante 5 segundos el contenido de `TempD
 - **Notificación**: se muestra en color azul. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Nx.`** seguido inmediatamente del texto que deseas que muestre la notificación.
 - **Advertencia**: se muestra en amarillo. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Wx.`** seguido inmediatamente del texto que deseas que muestre la notificación.
 - **Error**: se muestra en color rojo. Debes inicar el contenido de tu cadena `TempData["message"]` con **`Ex.`** seguido inmediatamente del texto que deseas que muestre la notificación.
-- **No definido**: se muestra en color blanco. Esta opción se muestra por defecto cuando la evaluación de los 3 primeros caracteres de la cadena no coincide con las opciones predeterminadas, mostrará el texto **después de los primeros tres caracteres** que compongan la cadena `TempData["message"]`.
+- **No definido**: se muestra en color blanco. Esta opción se muestra por defecto cuando la evaluación de los 3 primeros caracteres de la cadena no coincide con las opciones predeterminadas, mostrará íntegra la totalidad de la cadena contenida en `TempData["message"]`.
 
 Típicamente el contenido de `TempData["message"]` proviene de la variable `res` en los archivos de `repository`, por lo que es en éstos donde se tiene que realizar el cambio para que funcione adecuadamente, por ejemplo:
 
