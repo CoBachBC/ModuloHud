@@ -20,6 +20,13 @@
                 hudClass = "hudNeutro fadeHud";
                 break;
         }
-        <h3 class="@hudClass">@TempData["message"].ToString().Substring(3, TempData["message"].ToString().Length - 3)</h3>
+        if (hudClass.ToString() == "hudNeutro fadeHud")
+        {
+            <h3 class="@hudClass">@TempData["message"].ToString()</h3>
+        }
+        else
+        {
+            <h3 class="@hudClass">@TempData["message"].ToString().Substring(3, TempData["message"].ToString().Length - 3)</h3>
+        }
     }
 }
