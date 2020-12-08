@@ -21,7 +21,7 @@ Muestra en una notificación emergente durante 5 segundos el contenido de `TempD
 
 Típicamente el contenido de `TempData["message"]` proviene de la variable `res` en los archivos de `repository`, por lo que es en éstos donde se tiene que realizar el cambio para que funcione adecuadamente, por ejemplo:
 
-Cambiar `res = "OK";` por `res = "Rx.OK"` producirá un mensaje de tipo `Éxito` con el texto `OK`.
+Cambiar `res = "OK";` por `res = "Rx.OK;"` producirá un mensaje de tipo `Éxito` con el texto `OK`.
 
 ## Funcionamiento
 
